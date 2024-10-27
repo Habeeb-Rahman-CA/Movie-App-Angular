@@ -1,0 +1,48 @@
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #000000ae, #000000ae),
+    url(../../assets/37976.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .logo {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  .desc {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    text-align: justify;
+    top: 160px;
+    right: 50px;
+    width: 1200px;
+  }
+  .login-form {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    box-shadow: 5px 5px 20px #383838;
+    .form-group {
+      margin-top: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    .btn-container {
+      .btn {
+        margin-top: 30px;
+      }
+    }
+  }
+}
