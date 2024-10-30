@@ -4,11 +4,12 @@ import { ActivatedRoute } from '@angular/router';
 import { trendingMovies } from '../../assets/data/trending-movies';
 import { theaterMovies } from '../../assets/data/theater-movies';
 import { popularMovies } from '../../assets/data/popular-movies';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-movie',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, CommonModule],
   templateUrl: './movie.component.html',
   styleUrl: './movie.component.css'
 })
