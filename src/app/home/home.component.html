@@ -1,5 +1,4 @@
 <app-header></app-header>
-
 <div class="home-container">
     <div class="all-movies">
         <div class="trending-movies">
@@ -8,13 +7,13 @@
                 <div class="view-all">View all</div>
             </div>
             <div class="movie-thumbnail">
-                <div class="movie">
+                <div class="movie" *ngFor="let movie of getTrendingMovies">
                     <div class="cover">
-                        <img src="" alt="">
+                        <img [src]="movie.cover" alt="">
                     </div>
                     <div class="detail">
-                        <div class="name"></div>
-                        <div class="rating"></div>
+                        <div class="name">{{movie.name}}</div>
+                        <div class="rating"><i class="fa-solid fa-star"></i>{{movie.rating}}</div>
                     </div>
                 </div>
             </div>

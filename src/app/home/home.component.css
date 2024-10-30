@@ -20,6 +20,32 @@
                 cursor: pointer;
             }
         }
+        .movie-thumbnail{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 4px;
+            .movie{
+                .cover{
+                    img{
+                        border-radius: 5px;
+                        width: 170px;
+                    }
+                }
+            }
+            .detail{
+                width: 180px;
+                .name{
+                    font-weight: bold;
+                    height: 50px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+                .fa-star{
+                    color: rgb(230, 226, 0);
+                    padding-right: 5px;
+                }
+            }
+        }
     }
     .popular-movies{
         width: 25%;
