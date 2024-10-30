@@ -1,54 +1,115 @@
-.home-container{
+.home-container {
     display: flex;
-    .all-movies{
+
+    .all-movies {
         width: 75%;
         min-height: calc(100vh - 80px);
         border-right: 1px solid #335b2e;
         padding: 20px 40px;
-        .top{
+
+        .top {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            h4{
+
+            h4 {
                 text-transform: uppercase;
                 font-weight: bold;
                 border-left: #335b2e 5px solid;
                 padding-left: 10px;
             }
-            .view-all{
+
+            .view-all {
                 color: #335b2e;
                 cursor: pointer;
             }
         }
-        .movie-thumbnail{
+
+        .movie-thumbnail {
             display: flex;
             justify-content: space-between;
             padding: 0 4px;
-            .movie{
-                .cover{
-                    img{
+            margin-bottom: 20px;
+
+            .movie {
+                .cover {
+                    img {
                         border-radius: 5px;
                         width: 170px;
                     }
                 }
             }
-            .detail{
+
+            .detail {
                 width: 180px;
-                .name{
+
+                .name {
                     font-weight: bold;
                     height: 50px;
                     margin-top: 5px;
                     cursor: pointer;
+                    transition: all 0.3s ease;
                 }
-                .fa-star{
+
+                .name:hover {
+                    color: #335b2e;
+                }
+
+                .fa-star {
                     color: rgb(230, 226, 0);
                     padding-right: 5px;
                 }
             }
         }
     }
-    .popular-movies{
+
+    .popular-movies {
         width: 25%;
         padding: 20px 40px;
+
+        h4 {
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left: #335b2e 5px solid;
+            padding-left: 10px;
+        }
+
+        .movies {
+            .movie {
+                margin-bottom: 20px;
+                margin-top: 30px;
+
+                .detail {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                }
+
+                .name {
+                    font-weight: bold;
+                    margin-top: 5px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+
+                .name:hover {
+                    color: #335b2e;
+                }
+
+                .fa-star {
+                    color: rgb(230, 226, 0);
+                    padding-right: 5px;
+                }
+            }
+
+            .view-all {
+                color: #335b2e;
+                text-align: right;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+        }
+
     }
 }
