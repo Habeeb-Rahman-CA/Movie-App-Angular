@@ -17,9 +17,9 @@ export class MovieComponent implements OnInit {
 
   id = 0
   movies = [...trendingMovies, ...theaterMovies, ...popularMovies]
-  movie : any
+  movie: any
 
-  constructor(private activatedRoute: ActivatedRoute,   ) { }
+  constructor(private activatedRoute: ActivatedRoute,) { }
 
   ngOnInit(): void {
     this.id = this.activatedRoute.snapshot.params['id']
@@ -28,11 +28,11 @@ export class MovieComponent implements OnInit {
   }
 
   getMovie() {
-    let index = this.movies.findIndex(
+    let filteredMovie = this.movies.filter(
       (movie => movie.id == this.id)
     )
-    if (index > -1) {
-      this.movie = this.movies[index]
+    if (filteredMovie.length > 0) {
+      this.movie = filteredMovie[0]
     }
   };
 
